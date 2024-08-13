@@ -1,4 +1,4 @@
-# Seat-Heater-tm4c123gh6pm-FreeRTOS
+# Real-Time Seat Heater Control System Using FreeRTOS and TM4C123GH6PM
 Project Overview:
 
 Each seat includes:
