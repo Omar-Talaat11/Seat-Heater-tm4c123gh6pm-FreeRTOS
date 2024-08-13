@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<simulation cycles_per_ms="1000000" duration="1000000000" etm="wcet">
+	<sched class="simso.schedulers.FP" overhead="0" overhead_activate="0" overhead_terminate="0"/>
+	<caches memory_access_time="100"/>
+	<processors>
+		<processor cl_overhead="0" cs_overhead="0" id="1" name="CPU 1" speed="1.0"/>
+	</processors>
+	<tasks>
+		<field name="priority" type="int"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="200.0" et_stddev="0.0" id="1" instructions="0" list_activation_dates="" mix="0.5" name="Driver Intensity Control Task" period="200.0" preemption_cost="0" priority="1" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="200.0" et_stddev="0.0" id="2" instructions="0" list_activation_dates="" mix="0.5" name="Passenger Intensity Control Task" period="200.0" preemption_cost="0" priority="1" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="200.0" et_stddev="0.0" id="3" instructions="0" list_activation_dates="" mix="0.5" name="Driver Heater Task" period="200.0" preemption_cost="0" priority="2" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="200.0" et_stddev="0.0" id="4" instructions="0" list_activation_dates="" mix="0.5" name="Passenger Heater Task" period="200.0" preemption_cost="0" priority="2" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="500.0" et_stddev="0.0" id="5" instructions="0" list_activation_dates="" mix="0.5" name="Driver Temp Read Task" period="500.0" preemption_cost="0" priority="3" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="500.0" et_stddev="0.0" id="6" instructions="0" list_activation_dates="" mix="0.5" name="Passenger Temp Read Task" period="500.0" preemption_cost="0" priority="3" task_type="Periodic"/>
+		<task ACET="0.0" WCET="334.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="1000.0" et_stddev="0.0" id="7" instructions="0" list_activation_dates="" mix="0.5" name="Display Task" period="1000.0" preemption_cost="0" priority="1" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="500.0" et_stddev="0.0" id="8" instructions="0" list_activation_dates="" mix="0.5" name="Diagnostic Task" period="500.0" preemption_cost="0" priority="4" task_type="Periodic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="50.0" base_cpi="1.0" deadline="100.0" et_stddev="0.0" id="9" instructions="0" list_activation_dates="50.0, 100.0" mix="0.5" name="Button Task" period="100000.0" preemption_cost="0" priority="5" task_type="Sporadic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="100.0" et_stddev="0.0" id="10" instructions="0" list_activation_dates="70.0" mix="0.5" name="Driver Handle Error Task" period="10.0" preemption_cost="0" priority="5" task_type="Sporadic"/>
+		<task ACET="0.0" WCET="1.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="100.0" et_stddev="0.0" id="11" instructions="0" list_activation_dates="100.0" mix="0.5" name="Passenger Handle Error Task" period="10.0" preemption_cost="0" priority="5" task_type="Sporadic"/>
+	</tasks>
+</simulation>
